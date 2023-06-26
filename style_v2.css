@@ -1,0 +1,103 @@
+#background{
+    background-image: url("http://library.codingecho.in/wp-content/uploads/2022/07/in-progress.png");
+   
+   
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   .entry-header {
+       margin-bottom: 0 !important;
+   }
+   
+   a{
+       text-decoration:none !important;
+   }
+   
+   @font-face {
+       font-family: "OpenSans";
+       src: url("fonts/OpenSans.ttf") format("truetype");
+     }
+   
+   .list-group-item{
+       background: transparent !important;
+       border: none !important;
+   }
+   
+   body, html {
+       height: 100%;
+       margin: 0;
+     }
+   
+     .sidebar>li{
+       color:grey;
+     }
+   
+   .sidebar>li:hover{
+     background-color: rgba(6, 106, 201, 0.1) !important;
+     color:#0078AA;
+     font-weight: bold;
+   }
+   
+   #offcanvasExample {
+       max-width: 250px;
+   }
+   
+   .blues{
+      color:#0078AA;
+   }
+   
+   .bg-blues{
+     background-color: #0078AA !important;
+   }
+   
+   .bg-lightblue{
+     background-color:rgba(6, 106, 201, 0.1)
+   }
+   
+   .divider{
+     border-bottom: 3px solid #0078AA;
+   }
+   
+   #page{
+       margin:0em !important;
+   }
+   
+   html,body{
+       margin:0px !important;
+           height: 100% !important;
+   
+   }
+   .entry-content{
+       margin-top: 0;
+       padding-top: 0;
+           height: 100% !important;
+   }
+   
+   .list-group{
+       margin:0px;
+   }
+   
+   .list-unstyled{
+       margin:0px;
+   }
+   
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+   
+   @media screen and (min-width: 601px) {
+     .text-responsive {
+       font-size: 60px;
+     }
+   }
+   
+   @media screen and (max-width: 600px) {
+     .text-responsive {
+       font-size: 45px;
+     }
+   }
+   

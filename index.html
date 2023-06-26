@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dypiu Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="basic-script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+ 
+</head>
+
+<body>
+    <div class="h-100" id="background">
+        <div w3-include-html="menu.html"></div>
+        <div class="container">
+            <div class="text-light pt-5 text-responsive fw-bolder" style="font-family: 'Open Sans', sans-serif">
+                Learning Resource Plaza
+            </div>
+            <div class="fs-1 text-light fw-light">(Central Library)</div>
+
+            <div class=" fs-4 mt-5 mt-lg-4 m"><span style="color:#FFBF00;font-weight: 900;">Your systematic learning
+                    partner....</div></span>
+        </div>
+    </div>
+    <!-- <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+            <a href="#"><i class="bi bi-caret-up d-none d-lg-block text-info fs-3"></i></a>
+        </div> -->
+    <div class="powr-hit-counter position-absolute bottom-0 mb-4" id="00966662_1659629005"></div>
+    <script src="https://www.powr.io/powr.js?platform=html"></script>
+    </div>
+
+    <div style="height: 60px;width: 60px;"
+        class="rounded-circle shadow-lg me-4 mb-4 position-fixed bottom-0 end-0 d-flex align-items-center justify-content-center grad-animation ">
+        <a href="http://10.10.9.81:8000/"><img class="" style="height:42px;width:42px" src="/search.svg"></img></a>
+    </div>
+
+    <!-- <div class="container" style="margin-top: 50%">
+        <div class="row gy-4 align-items-center justify-content-evenly py-4">
+            <div class="col-lg-6 text-center col-md-6 col-sm-12">
+                <img src="http://library.codingecho.in/wp-content/uploads/2022/07/library.png" class="img-fluid"
+                    alt="..." />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card bg-transparent border-0">
+                    <div class="fs-2 ms-3">Statistics</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-12 col-sm-12">
+                                <span class="ms-3 float-end text-primary fw-bolder">1827 Books</span>
+                                <h5 class="m-b-25">Printed Books</h5>
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <span class="ms-3 float-end text-danger fw-bolder">10,000+ Titles</span>
+                                <h5 class="m-b-25">E-Books</h5>
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <span class="ms-3 float-end text-info fw-bolder">50,000+ Titles</span>
+                                <h5 class="m-b-25">E-Journals</h5>
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <span class="ms-3 float-end text-success fw-bolder">12,000+ Proceedings</span>
+                                <h5 class="m-b-25">E-Proceedings</h5>
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <span class="ms-3 float-end text-warning fw-bolder">1,17,000+</span>
+                                <h5 class="m-b-25">E-Thesis & Dissertations</h5>
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1 g-3">
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card border-0" style="border-radius: 20px !important">
+                    <img class="card-img-top" style="height: 9rem; border-radius: 20px"
+                        src="http://library.codingecho.in/wp-content/uploads/2022/07/placeholder.jpg"
+                        alt="Card image cap" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containter-fluid mt-5 bg-light">
+        <div class="container">
+            <div class="row py-4 justify-content-evenly">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="fs-2">Services</div>
+                    <ul class="list-group border-0">
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Automated Library
+                            Operations through “Koha” Library Management Software
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Web Based Current
+                            Awareness Service and SDI
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Web OPAC (for searching
+                            of library books)
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Reference Services
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> 'Thesis of the Month'
+                            Alerts
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> 'New Arrivals' & 'Current
+                            Contents' Alerts
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Borrow a 3D Printer
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="fs-2">Facilities</div>
+                    <ul class="list-group border-0">
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Dedicated Wi-Fi
+                            Connectivity
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Online Book Request
+                            through “Koha” Portal
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> New Book Recommendation &
+                            Reservation of Book/s
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> 100 seater Reading Hall
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Air-conditioned stacking
+                            area
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Photocopying/Scanning
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-patch-check-fill"></i> Kindle E-Book Reader
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <img src="http://library.codingecho.in/wp-content/uploads/2022/07/left-brain-vs-right-brain.jpg"
+            class="card-img-top img-fluid" alt="..." />
+    </section>
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="fs-2 my-2">Rules</div>
+            <div class="row">
+                <div class="col-lg">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Book
+                            will be issued to students across all the departments and
+                            courses on respective library ID for the period of 7 days from
+                            the date of issue.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> 6
+                            Books will be issued to full time faculty members for the period
+                            of 90 days from the date of issue
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> The
+                            last stamped date on the due date slip will be the
+                            return/renewal date of the book
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Late
+                            fee of Rs.5/- per day per book will be charged for late
+                            return/renewal.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Book
+                            will be re-issued only in case there is no reservation on that
+                            particular book. Library LD, is essential for every transaction
+                            and which is non-transferable.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i>
+                            Borrower will be fully accountable for any borrowed material
+                            from the library. will bey Loss of book/s borrowed from library
+                            should be reported immediately and new copy will be recovered
+                            from the borrower as a replacement copy of the same book,
+                            simultaneously the return/renewal date of the lost books will be
+                            verified for collecting late fees if any.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i>
+                            Marking, folding of pages or any unfair practices with the
+                            borrowed material is strictly not allowed.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Loss
+                            of book/s borrowed from library should be reported immediately
+                            and new copy will be recovered from the borrower as a
+                            replacement copy of the same book, simultaneously the
+                            return/renewal date of the lost book/s will be verified for
+                            collecting late fees if any.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Loss
+                            of book/s borrowed from library should be reported immediately
+                            and new copy will be recovered from the borrower as a
+                            replacement copy of the same book, simultaneously the
+                            return/renewal date of the lost book/s will be verified for
+                            collecting late fees if any.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i>
+                            Marking, folding of pages or any unfair practices with the
+                            borrowed material is strictly not allowed
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i>
+                            Pin-Drop silence and a studious environment should be maintained
+                            at all the time in the library premises
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> Group
+                            Discussions/Chatting/Group study is strictly not allowed in the
+                            reading hall
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i> It is
+                            the responsibility of user to ensure that subscribed e-resources
+                            are used for personal, educational and research purposes only,
+                            accessing e-resources for commercial use is strictly not
+                            allowed.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-journal-check text-primary fw-bolder"></i>
+                            Access rights of the subscribed e-resources/databases toward the
+                            users will be controlled by the library.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ========== Start Team ========== -->
+    <!-- <div class="container-fluid bg-light">
+        <div class="container py-4">
+            <div class="fs-2 mb-3">Team</div>
+            <div class="row gy-4 pt-2 pb-4 px-lg-4">
+                <div class="col-lg">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-absolute top-0 end-0 m-2">
+                            <i class="bi bi-stars text-warning fs-5"></i>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-auto">
+                                <img src="http://library.codingecho.in/wp-content/uploads/2022/07/my-photo.jpg"
+                                    style="max-height: 200px" class="img-fluid rounded m-2" alt="page not found" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">Dr. Bipin Nargide</h5>
+                                    <small class="text-muted">University Librarian</small>
+                                    <p class="card-text mt-3">M. L. ISc., SET, Ph.D., PGDLAN</p>
+                                    <p class="card-text blues fw-bold">
+                                        <i class="bi bi-envelope-fill my-auto text-danger"></i>
+                                        <a href="#" class="text-reset">bipin.nargide@dypiu.ac.in</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-absolute top-0 end-0 m-2">
+                            <i class="bi bi-stars text-warning fs-5"></i>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="http://library.codingecho.in/wp-content/uploads/2022/07/mayur-patil.jpg"
+                                    style="max-height: 170px" class="img-fluid rounded m-2" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">Mr. Mayur Patil</h5>
+                                    <small class="text-muted">Assistant Librarian</small>
+                                    <p class="card-text mt-3">M.A., M. L. ISc.</p>
+                                    <div class="card-text blues fw-bold">
+                                        <i class="bi bi-envelope-fill my-auto text-danger"></i>
+                                        <a href="#" class="text-reset">mayurs.patil@dypiu.ac.in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ========== End Team ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <!-- <footer class="bd-footer py-3 bg-lightblue">
+        <div class="container px-4 px-md-3">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-3 mb-3">
+                    <a class="logo"><img src="logo.png" style="height: 50px" alt="..." />
+                    </a>
+                    <ul class="list-unstyled small text-muted mt-3">
+                        <li class="mb-2">
+                            Sector 29, Nigdi Pradhikaran, Akurdi, Pune, Maharashtra 411044,
+                            D. Y. Patil International University
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-reset" href="/"><i class="fs-5 bi bi-facebook pe-2"></i></a>
+                            <a class="text-reset" href="/"><i class="fs-5 bi bi-whatsapp pe-2"></i></a>
+                            <a class="text-reset" href="/"><i class="fs-5 bi bi-instagram pe-2"></i></a>
+                            <a class="text-reset" href="/"><i class="fs-5 bi bi-twitter pe-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <div class="fs-4 mb-2">Library</div>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/about.html">About us</a>
+                        </li>
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">Contact us</a>
+                        </li>
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">Timings</a>
+                        </li>
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">More info.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="fs-4 mb-2">Community</div>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">FAQ's</a>
+                        </li>
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">Developers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="fs-4 mb-2">Testimonials</div>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">Advisory Community</a>
+                        </li>
+                        <li class="mb-1 ms-1"><a class="text-reset" href="/">Team</a></li>
+                        <li class="mb-1 ms-1">
+                            <a class="text-reset" href="/">Credits</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="fs-4 mb-2">Contact</div>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-1 ms-1">
+                            <i class="bi bi-envelope pe-2"></i><a class="text-reset"
+                                href="https://github.com/twbs/bootstrap/issues">abc@gmail.com</a>
+                        </li>
+                        <li class="mb-1 ms-1">
+                            <i class="bi bi-telephone-fill pe-2"></i>+917775809134
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-small text-center text-muted">
+            <i class="bi bi-c-circle"></i> Copyright 2022 | All Rights Reserved
+        </div>
+    </footer> -->
+    <!-- ========== End Section ========== -->
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

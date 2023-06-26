@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dypiu Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="basic-script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"
+        integrity="sha256-+8RZJua0aEWg+QVVKg4LEzEEm/8RFez5Tb4JBNiV5xA=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div w3-include-html="menu.html"></div>
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div class="fs-2 my-4 mb-3"><span class="divider fw-bolder">Collection statistics</span></div>
+            <div class="row align-items-center my-4 my-md-5">
+                <div class="col-auto text-muted ms-md-5 order-md-5 mb-4 mb-md-0">
+                    <h6><span class="badge" style="background-color:rgb(255, 99, 132)">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 1984 Printed Books</h6>
+                    <h6><span class="badge" style="background-color:rgb(54, 162, 235)">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 2.20 lacs+ E-Books</h6>
+                    <h6><span class="badge" style="background-color:rgb(255, 205, 86)">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 50,000+ E-Journals</h6>
+                    <h6><span class="badge" style="background-color:rgb(241, 121, 15)">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 12,000+ E-Proceedings</h6>
+                    <h6><span class="badge" style="background-color:rgb(72, 241, 15 )">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 1,17,000+ E-Thesis & Dissertations</h6>
+                    <h6><span class="badge" style="background-color:#800080">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; </span> &nbsp 5500+ E-Magazines and Newspapers</h6>
+
+                </div>
+                <div class="col-md-5">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <div class="pt-3 pb-0">
+                <div class="h2 mb-3">Print Books</div>
+                <div class="align-items-center mb-3 row">
+                    <div class="text-muted text-sm col-sm-3">Text Books</div>
+                    <div class="col-sm-7">
+                        <div class="progress">
+                            <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="text-muted text-sm col-sm-2">853</div>
+                </div>
+                <div class="align-items-center mb-3 row">
+                    <div class="text-muted text-sm col-sm-3">Reference Books</div>
+                    <div class="col-sm-7">
+                        <div class="progress">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="48" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="text-muted text-sm col-sm-2">1131</div>
+                </div>
+                <div class="align-items-center mb-3 row">
+                    <div class="text-muted text-sm col-sm-3">Total Collection</div>
+                    <div class="col-sm-7">
+                        <div class="progress">
+                            <div role="progressbar" class="progress-bar bg-danger" aria-valuenow="88" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="text-muted text-sm col-sm-2">1984</div>
+                </div>
+            </div>
+            <div class="h2 mb-3">E-Books</div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">EBSCO Academic Collection</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">2.10 Lakhs Titles</div>
+            </div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">J-Gate Complete</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-success" aria-valuenow="48" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">10,000+ Titles</div>
+            </div>
+            <div class="h2 mb-3">E-Journals</div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">J-Gate Complete</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">50,000+ Titles</div>
+            </div>
+            <div class="h2 mb-3">E-Proceedings</div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">J-Gate Complete</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">12,000+ Conference Proceedings</div>
+            </div>
+            <div class="h2 mb-3">E-Thesis & Dissertations</div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">J-Gate Complete</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">1,17,000+</div>
+            </div>
+            <div class="h2 mb-3">E-Magazines and Newspapers</div>
+            <div class="align-items-center mb-3 row">
+                <div class="text-muted text-sm col-sm-3">Edzter Subscription</div>
+                <div class="col-sm-7">
+                    <div class="progress">
+                        <div role="progressbar" class="progress-bar bg-primary" aria-valuenow="78" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="text-muted text-sm col-sm-2">5500+</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer w3-include-html="footer.html" class="bd-footer py-3 bg-lightblue position bottom-0"></footer>
+    <script>
+        includeHTML();
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const data = {
+            labels: [
+                '1984 Printed Books',
+                '2.20 lacs+ E-Books',
+                '50,000+ E-Journals',
+                '12,000+ E-Proceedings',
+                '1,17,000+ E-Thesis & Dissertations',
+                '5500+ E-Magazines and Newspapers'
+
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [1984, 220000, 50000, 12000, 117000, 5500],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)',
+                    'rgb(241, 121, 15)',
+                    'rgb(72, 241, 15)',
+                    'rgb(112,48,160)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+
+        const config = {
+            type: 'doughnut',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
+            }
+        };
+        const myChart = new Chart(ctx, config);
+
+
+    </script>
+</body>
+
+</html>

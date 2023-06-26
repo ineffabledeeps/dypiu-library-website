@@ -1,0 +1,158 @@
+#background {
+  background-image: url("/assets/in-progress.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100;
+}
+
+.entry-header {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/OpenSans.ttf") format("truetype");
+}
+
+.list-group-item {
+  background: transparent !important;
+  border: none !important;
+}
+
+.sidebar>li {
+  color: grey;
+}
+
+.sidebar>li:hover {
+  background-color: #EDE0FB !important;
+  color: #2e3192;
+  font-weight: bold;
+}
+
+.feedbackColor {
+  background-color: #f3efe5;
+}
+
+#offcanvasExample {
+  max-width: 355px;
+}
+
+.blues {
+  color: #0078AA;
+}
+
+.purples {
+  color: #2e3192
+}
+
+.bg-purples {
+  background-color: #2e3192 !important
+}
+
+.bg-blues {
+  background-color: #0078AA !important;
+}
+
+.bg-lightpurple {
+  background-color: #F8F2FF !important;
+}
+
+.bg-lightblue {
+  background-color: rgba(6, 106, 201, 0.1) !important;
+}
+
+.divider {
+  border-bottom: 5px solid #2e3192;
+}
+
+#page {
+  margin: 0em !important;
+}
+
+html,
+body {
+  margin: 0px !important;
+  height: 100% !important;
+
+}
+
+.entry-content {
+  margin-top: 0;
+  padding-top: 0;
+  height: 100% !important;
+}
+
+.list-group {
+  margin: 0px;
+}
+
+.list-unstyled {
+  margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@media screen and (min-width: 601px) {
+  .text-responsive {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-responsive {
+    font-size: 45px;
+  }
+}
+
+.grad-animation {
+  background: linear-gradient(-45deg, #F1C40F, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 5px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}

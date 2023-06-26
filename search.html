@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dypiu Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="basic-script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+<body>
+    <div w3-include-html="menu.html"></div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="fs-2 my-4"><span class="divider fw-bolder">Search books online</span></div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">You can Search DYPIU Library Books Online <span><div class="badge bg-success fs-6 fw-normal"><a href="http://10.10.9.81:8000/" class="text-reset">Click Here</a></div></span></h4>
+                <div><span  class="bg-danger rounded px-2 text-light">At present the link stated above can be accessible only by using institute's LAN</span></div>
+                <p class="card-text">You can also scan the below QR Code to search for the DYPIU library Books
+                </p>
+                <img class="" style="width:100px;height:100px" src="assets/qr-code.png"></img>
+            </div>
+        </div>
+    </div>
+    <footer w3-include-html="footer.html" class="bd-footer py-3 bg-lightblue position bottom-0"></footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
